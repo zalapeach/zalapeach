@@ -30,6 +30,8 @@ GEM
     arel (5.0.1.20140414130214)
     builder (3.2.2)
     erubis (2.7.0)
+    figaro (1.1.1)
+      thor (~> 0.14)
     i18n (0.7.0)
     json (1.8.2)
     mail (2.5.4)
@@ -369,4 +371,5 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  figaro (= 1.1.1)
   rails (= 4.1.1)

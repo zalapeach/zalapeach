@@ -1,3 +1,6 @@
 .ruby-gemset
 log/
 tmp/
+
+# Ignore application configuration
+/config/application.local.yml

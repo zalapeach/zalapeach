@@ -1,0 +1,14 @@
+defaults: &defaults
+  secret_key_base: 'your_secret_key_base'
+
+development:
+  <<: *defaults
+
+test:
+  <<: *defaults
+
+production:
+  <<: *defaults
+
+# This file will override the above
+<%= IO.read('config/database.local.yml') if File.exists?('config/database.local.yml') %>
