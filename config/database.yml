@@ -1,0 +1,22 @@
+defaults: &defaults
+  adapter: postgresql
+  pool: 5
+  timeout: 5000
+  host: localhost
+  username: 'your_username'
+  password: 'your_password'
+
+development:
+  database: zalapeach_development
+  <<: *defaults
+
+test:
+  database: zalapeach_test
+  <<: *defaults
+
+production:
+  database: zalapeach_production
+  <<: *defaults
+
+# This file will override the above
+<%= IO.read('config/database.local.yml') if File.exists?('config/database.local.yml') %>

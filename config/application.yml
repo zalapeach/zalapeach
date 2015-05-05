@@ -11,4 +11,4 @@ production:
   <<: *defaults
 
 # This file will override the above
-<%= IO.read('config/database.local.yml') if File.exists?('config/database.local.yml') %>
+<%= IO.read('config/application.local.yml') if File.exists?('config/application.local.yml') %>
