@@ -2,17 +2,21 @@
 %html
   %head
     %title zalapeach blog
+    = stylesheet_link_tag 'application', media: :all
   %body
-    %section
-      %h1 Juan Carlos Aguilar Rincón
-      %p Ingeniero de software
-    %nav
-      %ul
-        %li Inicio
-        %li Acerca de mi
-        %li Blog
-        %li Contacto
-        %li Curriculum
+    %section#header
+      %figure
+        = image_tag 'developer_icon.svg', size: '100x100',
+          class: 'header-icon'
+      %h1.header-title Juan Carlos Aguilar Rincón
+      %p.header-description Ingeniero de software
+    %nav.menu
+      %ul.menu-content
+        %li.menu-element= link_to 'Inicio', '#', class: 'menu-element-link'
+        %li.menu-element= link_to 'Acerca de mi', '#', class: 'menu-element-link'
+        %li.menu-element= link_to 'Blog', '#', class: 'menu-element-link'
+        %li.menu-element= link_to 'Contacto', '#', class: 'menu-element-link'
+        %li.menu-element= link_to 'Curriculum', '#', class: 'menu-element-link'
     = yield
     %footer
-      %p &copy; Juan Carlos Aguilar Rincón, algunos derechos reservados
+      %p.footer-info &copy; Juan Carlos Aguilar Rincón, algunos derechos reservados
