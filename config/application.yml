@@ -1,5 +1,7 @@
 defaults: &defaults
-  secret_key_base: 'your_secret_key_base'
+  SECRET_KEY_BASE: 'your_secret_key_base'
+  GOOGLE_CLIENT_ID: 'your_google_client_id'
+  GOOGLE_CLIENT_SECRET: 'your_google_client_secret'
 
 development:
   <<: *defaults
