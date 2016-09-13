@@ -1,0 +1,15 @@
+.content
+  %h1 Contacto
+  = form_for @contact, url: { action: :create },
+    html: { class: 'form' } do |form|
+    .form-row
+      = form.label :name, 'Nombre:', class: 'form-label'
+      = form.text_field :name, class: 'form-input'
+    .form-row
+      = form.label :email, 'Correo electrónico:', class: 'form-label'
+      = form.text_field :email, class: 'form-input'
+    .form-row
+      = form.label :message, 'Tu mensaje:', class: 'form-label'
+      = form.text_area :message, class: 'form-input'
+    .form-row
+      = form.submit 'Enviar mensaje', class: 'button'

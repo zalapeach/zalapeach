@@ -7,6 +7,9 @@ Rails.application.routes.draw do
   get 'auth/failure', to: redirect('/')
   get 'logout', to: 'sessions#destroy', as: 'logout'
 
+  post '/contact' => 'contacts#create'
+  get '/contact' => 'contacts#new'
+
   resources :sessions, only: [:create, :destroy]
 
   namespace :admin do
