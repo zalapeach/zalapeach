@@ -11,7 +11,7 @@ gem 'pg'
 gem 'tzinfo-data'
 gem 'haml-rails'
 gem 'jquery-rails'
-gem 'bootsnap',                '>= 1.1.0', require: :false
+gem 'bootsnap',                '>= 1.1.0'
 gem 'jbuilder',                '~> 2.5'
 
 gem 'figaro',                  '1.1.1'
