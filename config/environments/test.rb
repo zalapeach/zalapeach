@@ -7,7 +7,7 @@ Zalapeach::Application.configure do
   config.static_cache_control = 'public, max-age=3600'
 
   config.consider_all_request_local = true
-  config.action_controller.perform_catching = false
+  config.action_controller.perform_caching = false
 
   config.action_dispatch.show_exeptions = false
 
