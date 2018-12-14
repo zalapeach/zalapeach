@@ -11,6 +11,6 @@ services:
     environment:
       - POSTGRES_PASSWORD=tamarindo
     ports:
-      - "5433:5433"
+      - "5433:5432"
     volumes:
       - /home/zala/Desktop/WORK/volumes/zalapeach_db:/var/lib/postgresql/data
