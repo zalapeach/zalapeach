@@ -4,8 +4,8 @@ defaults: &defaults
   timeout: 5000
   host: pgdb
   port: 5433
-  username: <%= ENV[PGDB_USERNAME] %>
-  password: <%= ENV[PGDB_PASSWORD] %>
+  username: <%= ENV['PGDB_USERNAME'] %>
+  password: <%= ENV['PGDB_PASSWORD'] %>
 
 development:
   database: zalapeach_development
