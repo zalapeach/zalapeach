@@ -2,7 +2,7 @@ defaults: &defaults
   adapter: postgresql
   pool: 5
   timeout: 5000
-  host: pgdbjenkins
+  host: pgdb
   username: <%= ENV['PGDB_USERNAME'] %>
   password: <%= ENV['PGDB_PASSWORD'] %>
 
