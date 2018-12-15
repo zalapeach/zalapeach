@@ -2,6 +2,9 @@ version: '3'
 services:
   railsapp:
     build: .
+    environment:
+      - PGDB_USERNAME
+      - PGDB_PASSWORD
     depends_on:
       - pgdb
   pgdb:
