@@ -7,4 +7,11 @@ describe HomeController do
     it { expect(response).to be_successful }
     it { expect(response).to render_template :index }
   end
+
+  describe '#signin' do
+    before { get :signin }
+
+    it { expect(response).to be_successful }
+    it { expect(response).to render_template :signin }
+  end
 end
