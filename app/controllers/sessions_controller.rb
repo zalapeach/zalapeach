@@ -1,6 +1,6 @@
 class SessionsController < ApplicationController
   def create
-    user = User.omniauth_auth(env['omniauth.auth'])
+    user = User.omniauth_auth(request.env['omniauth.auth'])
     if user.nil?
       redirect_to root_path
     else
